@@ -43,3 +43,15 @@ window.onscroll = () => {
     this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
   );
 };
+//read more
+const btnLer = document.querySelector("#read");
+const txtMais = document.querySelector("#mais");
+btnLer.addEventListener("click", function (e) {
+  e.preventDefault();
+  txtMais.classList.toggle("ativo");
+  if (txtMais.classList.contains("ativo")) {
+    btnLer.innerText = "Ler Menos";
+  } else {
+    btnLer.innerText = "Ler Mais";
+  }
+});
