@@ -773,9 +773,7 @@ footer .animate.scroll {
     align-items: center;
     padding: 0 9%;
   }
-  .home h1 {
-    font-size: 4rem;
-  }
+
   .home-content {
     max-width: 100%;
   }
@@ -812,7 +810,7 @@ footer .animate.scroll {
 }
 @media (max-width: 462px) {
   .home-content h1 {
-    font-size: 5.2rem;
+    font-size: 4.5rem;
   }
   .education {
     padding: 10rem 4% 5rem 5%;
@@ -828,7 +826,7 @@ footer .animate.scroll {
     text-align: center;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 400px) {
   .home {
     justify-content: center;
   }
@@ -839,7 +837,7 @@ footer .animate.scroll {
     text-align: center;
   }
   .home-content h1 {
-    font-size: 4.3rem;
+    font-size: 4rem;
   }
 }
 
