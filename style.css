@@ -101,7 +101,7 @@ section {
   background-color: var(--bg-color);
 }
 .home-content {
-  max-width: 50rem;
+  max-width: 70rem;
 }
 .home-content h1 {
   font-size: 5.6rem;
@@ -111,7 +111,7 @@ section {
 }
 .home-content .text-animate {
   position: relative;
-  width: 32.8rem;
+  width: 33.8rem;
 }
 .home-content .text-animate h3 {
   font-size: 3.2rem;
