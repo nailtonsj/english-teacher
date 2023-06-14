@@ -139,6 +139,10 @@ section {
   animation: homeBgText 6s linear infinite;
   animation-delay: 2s;
 }
+.home.show-animate .home-content .text-animate h3 {
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
 .home-content .text-animate h3::before {
   content: "";
   position: absolute;
@@ -306,12 +310,15 @@ section {
 }
 .about-content h3 {
   font-size: 2.6rem;
+  position: relative;
 }
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  position: relative;
 }
 .btn-box.btns {
+  position: relative;
   display: inline-block;
   width: 15rem;
 }
@@ -335,13 +342,16 @@ section {
 }
 .education-row .education-column {
   flex: 1 1 40rem;
+  position: relative;
 }
 .education-column .title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
+  position: relative;
 }
 .education-column .education-box {
   border-left: 0.2px solid var(--main-color);
+  position: relative;
 }
 .education-box .education-content {
   position: relative;
@@ -394,16 +404,23 @@ section {
 }
 .education-content .content h3 {
   font-size: 2rem;
+  position: relative;
 }
 .education-content .content p {
   font-size: 1.6rem;
   padding-top: 0.5rem;
+  position: relative;
 }
 /* skills */
 .skills {
   min-height: auto;
   padding-bottom: 7rem;
   background-color: var(--second-bg-color);
+}
+.skills h2 {
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
 }
 .skills .skills-row {
   display: flex;
@@ -412,11 +429,18 @@ section {
 }
 .skills-row .skills-column {
   flex: 1 1 40rem;
+  position: relative;
 }
 .skills-column .title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem;
+  position: relative;
+  display: inline-block;
 }
+.skills-column .skills-box {
+  position: relative;
+}
+
 .skills-box .skills-content {
   position: relative;
   border: 0.2rem solid var(--main-color);
@@ -447,6 +471,7 @@ section {
   display: flex;
   font-size: 1.7rem;
   justify-content: space-between;
+  position: relative;
 }
 .skills-content .progress h3 span {
   color: var(--text-color);
@@ -494,6 +519,11 @@ section {
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
+}
+.contact h2 {
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
 }
 .contact form {
   max-width: 70rem;
@@ -563,6 +593,12 @@ section {
   padding: 2rem 9%;
   background-color: var(--second-bg-color);
 }
+.footer-text {
+  position: relative;
+}
+.footer-iconTop {
+  position: relative;
+}
 .footer-text p {
   font-size: 1.6rem;
 }
@@ -627,8 +663,19 @@ section {
   transition-delay: calc(0.3s / var(--i));
   animation: none;
 }
-.about.show-animate .anime.scroll {
-  width: 0;
+section:nth-child(odd) .animate.scroll,
+footer .animate.scroll {
+  background-color: var(--second-bg-color);
+}
+.education .education-box .animate.scroll {
+  width: 105%;
+}
+.about.show-animate .animate.scroll,
+.education.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll,
+.footer.show-animate .animate.scroll {
+  width: 0%;
   transition-delay: calc(0.3s * var(--i));
 }
 
